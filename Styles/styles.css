@@ -108,6 +108,25 @@ hr {
 	text-decoration: underline;
 }
 
+/* Footer */
+
+.footer {
+	background-color: #4600A4;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	font-size: 0.5em;
+}
+
+.footer a {
+	color: white;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
 /* Scripts CSS */
 
 .reveal {
