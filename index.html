@@ -2,7 +2,14 @@
 
 <head>
 	<title>BVanFleet Professional Portfolio</title>
+	
 	<link href="Styles/styles.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="Scripts/index-script.js"></script>
+	
+	<style>
+		h2, h3 { text-align: center; }
+	</style>
 </head>
 
 <body>
@@ -20,12 +27,68 @@
 	
 	<!-- Main Body -->
 	<div class="content">
-		<div class="banner">
+		<div id="banner">
 			<img src="Images/Brad.jpg" alt="Brad Van Fleet Profile Picture" />
 			<p class="tagline"><em>Developer, dreamer, husband, and artist</em></p>
 		</div>
 		<hr />
-		
+		<div id="scroll-down">
+			<p>Please scroll down</p>
+		</div>
+		<div id="skills" class="reveal">
+			<h2>Software Skills</h2>
+			<div class="half-column">
+				<ul>
+					<li>C++ <em>(high proficiency)</em></li>
+					<li>C# <em>(high proficiency)</em></li>
+					<li>HTML/CSS <em>(high proficiency)</em></li>
+				</ul>
+			</div>
+			<div class="half-column">
+				<ul>
+					<li>JavaScript <em>(low proficiency)</em></li>
+					<li>Fortran <em>(low proficiency)</em></li>
+					<li>Python <em>(low proficiency)</em></li>
+				</ul>
+			</div>
+		</div>
+		<hr />
+		<div id="school">
+			<h2>Education</h2>
+			<div class="school-name reveal">
+				<p>Bachelors of Science Computer Science<p>
+				<p><em>Utah Valley University, Orem, UT</em></p>
+			</div>
+			<div class="courses reveal">
+				<h3>Courses Completed</h3>
+				<div class="half-column">
+					<ul>
+						<li>Object-Oriented Programming</li>
+						<li>Algorithms and Data Structures</li>
+						<li>Software Engineering</li>
+					</ul>
+				</div>
+				<div class="half-column">
+					<ul>
+						<li>C# .NET Software Development</li>
+						<li>Computer Organization and Architecture</li>
+					</ul>
+				</div>
+			</div>
+			<div class="reveal">
+				<h3>Organizations</h3>
+				<p>IEEE <em>(Aug 2016 - Jan 2018)</em> Co-Chair, University Relations</p>
+			</div>
+		</div>
+		<hr />
+		<div id="projects">
+			<h2>Top Projects</h2>
+			<div class="project reveal">
+				<h3><a href="https://github.com/bvanfleet/W3-Manager">World-Wide Wombats (W3) Manager</a></h3>
+				<p>The W3 Manager is an HR Management software designed to help store, organize, and maintain basic employment information.</p>
+				<p>This project was developed for the UVU CS3260 C# Software development final project. Client requested requirements had been completed; however, additional, "gold-plated" features had been implemented. This project is currently under review to be further expanded to include time tracking and tax documentation.</p>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
