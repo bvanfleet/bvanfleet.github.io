@@ -1,0 +1,53 @@
+/* General CSS Styles */
+
+body {
+	font-family: Arial, Sans Serif;
+	font-size: 14pt;
+	background-color: #F5F5F5;
+}
+
+hr {
+	width: 80%;
+}
+
+/* Top Navigation Menu */
+
+.navbar {
+	background-color: #4600A4;
+	padding: 5px;
+}
+
+.menu li {
+	display: inline-block;
+	margin: 5px;
+}
+
+.menu a {
+	color: white;
+	font-size: 1.7em;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	text-decoration: underline;
+}
+
+/* Profile Banner */
+
+.banner {
+	width: 30%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.banner img {
+	max-width: 100%;
+	border-radius: 30px;
+}
+
+.tagline {
+	font-family: Georgia, Serif;
+	font-size: 1.35em;
+	text-align: center;
+}
+
