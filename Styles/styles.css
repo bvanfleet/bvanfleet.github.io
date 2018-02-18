@@ -1,7 +1,7 @@
 /* General CSS Styles */
 
 body {
-	font-family: Arial, Sans Serif;
+	font-family: Arial, Sans-serif;
 	font-size: 14pt;
 	background-color: #F5F5F5;
 }
@@ -116,9 +116,17 @@ hr {
 
 /* Responsive adjustments */
 
-@media only screen and (max-width: 667) {
+@media only screen and (max-width: 667px) {
 	body {
-		font-size: 24pt;
+		font-size: 18pt;
+	}
+	
+	#banner {
+		width: 70%;
+	}
+	
+	#banner img {
+		border-radius: 7px;
 	}
 	
 	.half-column {
