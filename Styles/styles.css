@@ -59,6 +59,11 @@ hr {
 	padding: 10px;
 }
 
+.content {
+	width: 80%;
+	margin: 0 auto;
+}
+
 .half-column {
 	display: inline-block;
 	width: 45%;
@@ -135,6 +140,7 @@ hr {
 	}
 	
 	.menu li {
+		display: block;
 		margin: 5px;
 	}
 	
