@@ -1,105 +1,193 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Brad Van Fleet Personal Portfolio</title>
 
-<head>
-	<title>Brad VanFleet Professional Portfolio - Home</title>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link href="Styles/styles.css" type="text/css" rel="stylesheet" />
-	<link href="Styles/script-styles.css" type="text/css" rel="stylesheet" />
-	
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-	<script type="text/javascript" src="Scripts/index-script.js" defer></script>
-	
-	<style>
-		h2, h3 { text-align: center; }
-	</style>
-</head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-<body>
-	<!-- Header -->
-	<div class="navbar">
-		<div class="menu">
-			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="https://github.com/bvanfleet">GitHub</a></li>
-			</ul>
-		</div>
-	</div>
-	
-	<!-- Main Body -->
-	<div class="content">
-		<div id="banner">
-			<img src="Images/Brad.JPG" alt="Brad Van Fleet Profile Picture" />
-			<p class="tagline"><em>Developer, dreamer, husband, and artist</em></p>
-		</div>
-		<hr />
-		<div id="scroll-down">
-			<p>Please scroll down</p>
-		</div>
-		<div id="skills" class="reveal">
-			<h2>Software Skills</h2>
-			<div class="half-column">
-				<ul>
-					<li>C++ <em>(high proficiency)</em></li>
-					<li>C# <em>(high proficiency)</em></li>
-					<li>HTML/CSS <em>(high proficiency)</em></li>
-				</ul>
-			</div>
-			<div class="half-column">
-				<ul>
-					<li>JavaScript <em>(low proficiency)</em></li>
-					<li>Fortran <em>(low proficiency)</em></li>
-					<li>Python <em>(low proficiency)</em></li>
-				</ul>
-			</div>
-		</div>
-		<hr />
-		<div id="school" class="reveal">
-			<h2>Education</h2>
-			<div class="school-name reveal">
-				<p>Bachelors of Science Computer Science<p>
-				<p><em>Utah Valley University, Orem, UT</em></p>
-			</div>
-			<div class="courses reveal">
-				<h3>Courses Completed</h3>
-				<div class="half-column">
-					<ul>
-						<li>Object-Oriented Programming</li>
-						<li>Algorithms and Data Structures</li>
-						<li>Software Engineering</li>
-					</ul>
-				</div>
-				<div class="half-column">
-					<ul>
-						<li>C# .NET Software Development</li>
-						<li>Computer Organization and Architecture</li>
-					</ul>
-				</div>
-			</div>
-			<div class="reveal">
-				<h3>Organizations</h3>
-				<p>IEEE <em>(Aug 2016 - Jan 2018)</em> Co-Chair, University Relations</p>
-			</div>
-		</div>
-		<hr />
-		<div id="projects" class="reveal">
-			<h2>Top Projects</h2>
-			<div class="project reveal">
-				<h3><a href="https://github.com/bvanfleet/W3-Manager">World-Wide Wombats (W3) Manager</a></h3>
-				<p>The W3 Manager is an HR Management software designed to help store, organize, and maintain basic employment information.</p>
-				<p>This project was developed for the UVU CS3260 C# Software development final project. Client requested requirements had been completed; however, additional, "gold-plated" features had been implemented. This project is currently under review to be further expanded to include time tracking and tax documentation.</p>
-			</div>
-		</div>
-	</div>
-	
-	<!-- Footer -->
-	<div class="footer">
-		<p>Copyright &copy; 2018 Brad Van Fleet</p>
-		<hr />
-		<p><strong>Disclaimer</strong>: This website is for personal use only. All scripts and coding are without any assumptions of proper functionality.</p>
-		<p>Want to view this webpage on GitHub? <a href="https://github.com/bvanfleet/bvanfleet.github.io">Click here</a></p>
-	</div>
-</body>
+        <link rel="stylesheet" href="assets/css/theme.css" />
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="60">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <a href="#" class="navbar-brand">
+                <img src="assets/images/brad.jpg" class="img-brand" alt="brand-image" /> Brad Van Fleet
+            </a>
+            
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#about-me" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Work Experience</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="skills" class="bg-img h-3 p-3" style="--bg-img: url(./../images/health-catalyst-headquarters.jpg)">
+            <img src="assets/images/brad-profile.jpg" class="img-fluid mx-auto d-block skill-img" alt="photo of Brad Van Fleet" />
+            <h2 class="text-center text-light skill-text display-3">I Am Skilled In: <span class="bb-2" id="skill-flipper" data-period="4500" data-items='[ "C# .NET", "SQL Server", "Azure DevOps", "Blockchain" ]'></span></h2>
+        </div>
+
+        <div class="container">
+            <section id="about-me">
+                <h2>About Me</h2>
+
+                <p>I am a software developer from central Utah.</p>
+                <p>Growing up I knew I was going to be a scientist. However, I didn't know that it was going to be a computer scientist. My initial plan, fueled by Cartoon Network's Dexter's Lab, was to become a chemist. After failing AP Chemistry in my senior year of high school, I decided that I wasn't cut out to be a chemist. I then decided that my passion was computers and technology.</p>
+                <p>It wasn't until I returned from a mission for the Church of Jesus Christ of Latter-Day Saints that I began finding my niche within computers. Originally, I was going to be a game developer. I began studying at Utah Valley University and attended a career tour of EA Games (before they shut down their SLC office).</p>
+                <p>My biggest pet peeve from EA, companies that hire computer scientists to do a job they <em>feel</em> a 12-year-old can do. Thanks EA Games, you ruined a career field for a college student, add that to your list of achievements.</p>
+                <p>After leaving the Salt Lake office for EA, I determined that my next step was to complete a computer science degree, but not for game development.</p>
+                <p><em>And here we are...</em></p>
+
+                <h4>Hobbies</h4>
+
+                <p>Below are a few hobbies that I engage in when I'm not developing software professionally</p>
+                <div class="row">
+                    <div class="col-sm">
+                        <ul>
+                            <li>Home data center</li>
+                            <li>Watch movies</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <li>Gardening</li>
+                            <li>Play violin</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <li>Build websites and software</li>
+                            <li>Bake bread and cook</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div>
+                    <h4>Utah Valley University</h4>
+                    <p><strong>Bachelor's of Science Computer Science</strong> <em class="text-right">Aug 2014 - May 2020</em></p>
+
+                    <p>Courses Taken:</p>
+                    <div class="row">
+                        <div class="col-md">
+                            <ul>
+                                <li>CS2540 &mdash; Software Engineering</li>
+                                <li>CS2550 &mdash; Web Programming I</li>
+                            </ul>
+                        </div>
+                        <div class="col-md">
+                            <ul>
+                                <li>CS3260 &mdash; C# .NET Programming</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>Projects</h4>
+                    <div>
+                        <p><strong>Patient Data Aggregation Platform (Medical Assistant)</strong></p>
+                        <ul>
+                            <li>
+                                Developed Angular 7/Bootstrap web application for patients to access medical data against a blockchain data store
+                            </li>
+                            <li>
+                                Integrated Ethereum blockchain and Inter-Planetary File System platforms for data security and storage
+                            </li>
+                            <li>
+                                Participated in a collaborative research paper submitted to the American Council on Science and Education 2019 International Conference on Health Information and Medical Systems
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="bg-parallax h-1" style="--parallax-img: url(./../images/uvu-campus.jpg)"></div>
+
+        <div class="container">
+            <section id="experience">
+                <h2>Experience</h2>
+                <p>Below are the most recent organizaitons that I have provided professional work for:</p>
+
+                <div class="row">
+                    <div class="col-sm m-1 border rounded shadow">
+                        <h3>Health Catalyst</h3>
+                        <p><strong>Software Developer, Jr</strong> <em class="text-right">Jun 2018 - Present</em></p>
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>
+                                Program ETL piplines and Windows service in C# .NET against a SQL Server database and maintain legacy SSIS product codebase
+                            </li>
+                            <li>
+                                Participate in daily SCRUM meetings to discuss needs and progress
+                            </li>
+                            <li>
+                                Assist with desgin and review for Data Operating System platform engine features, including code testing
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm m-1 border rounded shadow">
+                        <h3>DoxTek</h3>
+                        <p><strong>Technical Support Engineer</strong> <em class="text-right">Nov 2016 - May 2018</em></p>
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>
+                                Assisted other organization's IT and support departments regarding to Kofax, OnBase, and DoxTek customizations
+                            </li>
+                            <li>
+                                Handled in-office helpdesk support for network security using Active Directory, phones, internet, and workstations &mdash; re-imaging workstations where necessary
+                            </li>
+                            <li>
+                                Planned and completed internal server upgrades and network security improvements
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm m-1 border rounded shadow">
+                        <h3>Bluehost</h3>
+                        <p><strong>Web Advisor</strong> <em class="text-right">Mar 2016 - Oct 2016</em></p>
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>
+                                Provided technical support for email, WordPress CMS, and other web services
+                            </li>
+                            <li>
+                                Verified server performance and operation, escalating to server administers when intervention was necessary
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="bg-parallax h-2" style="--parallax-img: url(./../images/mt-timp.jpg)"></div>
+
+        <footer class="footer-dark bg-dark">
+            <p class="social-icons"><span class="lead">Want to reach me? Try one of these social platforms: </span>
+                <a href="https://github.com/bvanfleet" target="_blank" class="fab fa-github-square"></a>
+                <a href="https://www.linkedin.com/in/vanfleetb/" target="_blank" class="fab fa-linkedin"></a>
+            </p>
+            <p class="text-center">Copyright &copy; 2019 Brad Van Fleet</p>
+        </footer>
+
+        <script
+        src="http://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
