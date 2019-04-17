@@ -1,0 +1,26 @@
+{
+  "name": "brad-vanfleet-portfolio",
+  "version": "1.0.0",
+  "description": "Professional resume and portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build-styles": "sass assets/css/theme.scss assets/css/theme.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bvanfleet/bvanfleet.github.io.git"
+  },
+  "keywords": [
+    "resume",
+    "portfolio"
+  ],
+  "author": "Brad Van Fleet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bvanfleet/bvanfleet.github.io/issues"
+  },
+  "homepage": "https://github.com/bvanfleet/bvanfleet.github.io#readme",
+  "devDependencies": {
+    "sass": "^1.18.0"
+  }
+}

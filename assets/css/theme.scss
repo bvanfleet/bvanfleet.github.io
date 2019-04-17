@@ -1,15 +1,21 @@
+$color-white: #FFFFFF;
+$text-color: #1A0140;
+$text-color-light: #ABB0ED;
+$navbar-link-bg-color: #040B5E;
+$navbar-buffer: 2.5rem;
+
 body {
-    padding-top: 2.5rem;
+    padding-top: $navbar-buffer;
 }
 
 h1, h2, h3, h4, h5, strong {
-    color: #1A0140;
+    color: $text-color;
 }
 
 section {
     padding-bottom: 20px;
     padding-top: 3rem;
-    margin-top: -2.5rem;
+    margin-top: -($navbar-buffer);
 }
 
 .navbar {
@@ -21,9 +27,13 @@ section {
     padding: 0px !important;
 }
 
-.navbar-nav li a:hover, .navbar-nav li a.active {
-    color: #ABB0ED !important;
-    background-color: #040B5E !important;
+.navbar-nav {
+    li {
+        a:hover, a.active {
+            color: $text-color-light !important;
+            background-color: $navbar-link-bg-color !important;
+        }
+    }
 }
 
 .bg-img {
@@ -44,32 +54,31 @@ section {
 }
 
 .bb-2 {
-    border-bottom: solid 2px #FFFFFF;
+    border-bottom: solid 2px $color-white;
 }
 
 .footer-dark {
-    color: #FFFFFF;
+    color: $color-white;
     padding: 8px;
     left: 0;
     right: 0;
 }
 
-.h-1 {
-    height: 150px;
-}
-
-.h-2 {
-    height: 300px;
-}
-
-.h3 {
-    height: 450px;
+@for $i from 1 through 3 {
+    .h-#{$i} {
+        height: 150px * $i;
+    }
 }
 
 .img-brand {
     padding: 3px;
     height: 40px;
     border-radius: 2px;
+}
+
+.skill-img {
+    height: 180px;
+    border-radius: 100px;
 }
 
 .skill-text {
@@ -80,19 +89,14 @@ section {
     font-size: 2.5em;
     padding-right: 20px;
     text-align: right;
-}
 
-.skill-img {
-    height: 180px;
-    border-radius: 100px;
-}
+    a, a:visited {
+        color: $color-white;
+    }
 
-.social-icons a, .social-icons a:visited {
-    color: #FFFFFF;
-}
-
-.social-icons a:hover {
-    color: #ABB0ED;
+    a:hover {
+        color: $text-color-light
+    }
 }
 
 .text-right {
