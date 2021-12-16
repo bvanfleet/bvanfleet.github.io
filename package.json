@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/bvanfleet/bvanfleet.github.io#readme",
   "devDependencies": {
-    "sass": "^1.18.0"
+    "sass": "^1.45.0"
   }
 }
