@@ -90,6 +90,7 @@ section {
 }
 .social-icons a:hover {
   color: #ABB0ED;
+  text-decoration: none;
 }
 
 .text-right {

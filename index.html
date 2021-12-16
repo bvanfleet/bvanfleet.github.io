@@ -6,7 +6,7 @@
         
         <title>Brad Van Fleet Personal Portfolio</title>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
         <link rel="stylesheet" href="assets/css/theme.css" />
@@ -14,10 +14,6 @@
 
     <body data-spy="scroll" data-target=".navbar" data-offset="60">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-            <a href="#" class="navbar-brand">
-                <img src="assets/images/brad.jpg" class="img-brand" alt="brand-image" /> Brad Van Fleet
-            </a>
-            
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a href="#about-me" class="nav-link">About Me</a>
@@ -31,9 +27,9 @@
             </ul>
         </nav>
 
-        <div id="skills" class="bg-img h-3 p-3" style="--bg-img: url(./../images/health-catalyst-headquarters.jpg)">
+        <div id="skills" class="bg-img h-3 p-3" style="--bg-img: url(./../images/R1-Tech-Center.png)">
             <img src="assets/images/brad-profile.jpg" class="img-fluid mx-auto d-block skill-img" alt="photo of Brad Van Fleet" />
-            <h2 class="text-center text-light skill-text display-3">I Am Skilled In: <span class="bb-2" id="skill-flipper" data-period="4500" data-items='[ "C# .NET", "SQL Server", "Azure DevOps", "Blockchain" ]'></span></h2>
+            <h2 class="text-center text-light skill-text display-3">I Am Skilled In: <span class="bb-2" id="skill-flipper" data-period="7000" data-items='[ "C# .NET", "SQL Server", "Azure DevOps" ]'></span></h2>
         </div>
 
         <div class="container">
@@ -41,10 +37,14 @@
                 <h2>About Me</h2>
 
                 <p>I am a software developer from central Utah.</p>
-                <p>Growing up I knew I was going to be a scientist. However, I didn't know that it was going to be a computer scientist. My initial plan, fueled by Cartoon Network's Dexter's Lab, was to become a chemist. After failing AP Chemistry in my senior year of high school, I decided that I wasn't cut out to be a chemist. I then decided that my passion was computers and technology.</p>
-                <p>It wasn't until I returned from a mission for the Church of Jesus Christ of Latter-Day Saints that I began finding my niche within computers. Originally, I was going to be a game developer. I began studying at Utah Valley University and attended a career tour of EA Games (before they shut down their SLC office).</p>
-                <p>My biggest pet peeve from EA, companies that hire computer scientists to do a job they <em>feel</em> a 12-year-old can do. Thanks EA Games, you ruined a career field for a college student, add that to your list of achievements.</p>
-                <p>After leaving the Salt Lake office for EA, I determined that my next step was to complete a computer science degree, but not for game development.</p>
+                <p>
+                    Growing up I knew I was going to be a scientist. However, I didn't know that it was going to be a computer scientist. My initial plan, fueled by Cartoon Network's Dexter's Lab, was to become a chemist. After failing AP Chemistry in my senior year of high school, I decided that I wasn't cut out to be a chemist. I then decided that my passion was computers and technology.
+                </p>
+                <p>
+                    It wasn't until I returned from a mission for the Church of Jesus Christ of Latter-Day Saints that I began finding my niche within computers. Originally, I was going to be a game developer. I began studying at Utah Valley University and attended a career tour of EA Games (before they shut down their SLC office).
+                </p>
+                <p>
+                    My biggest pet peeve from EA, companies that hire computer scientists to do a job they <em>feel</em> a 12-year-old can do. Thanks EA Games. After the tour, I determined that my next step was to complete a computer science degree, but not for game development.</p>
                 <p><em>And here we are...</em></p>
 
                 <h4>Hobbies</h4>
@@ -76,7 +76,7 @@
                 <h2>Education</h2>
                 <div>
                     <h4>Utah Valley University</h4>
-                    <p><strong>Bachelor's of Science Computer Science</strong> <em class="text-right">Aug 2014 - May 2020</em></p>
+                    <p><strong>Bachelor's of Science Computer Science</strong> <em class="text-right">Aug 2014 - May 2023</em></p>
 
                     <p>Courses Taken:</p>
                     <div class="row">
@@ -89,6 +89,7 @@
                         <div class="col-md">
                             <ul>
                                 <li>CS3260 &mdash; C# .NET Programming</li>
+                                <li>CS3270 &mdash; Python Software Development</li>
                             </ul>
                         </div>
                     </div>
@@ -108,6 +109,20 @@
                             </li>
                         </ul>
                     </div>
+                    <div>
+                        <p><strong>Personal Financial Planner (Data Acquisition Service)</strong></p>
+                        <ul>
+                            <li>
+                                Developed a Python data acquisition pipeline engine for building datasets from data ingested from rest API sources.
+                            </li>
+                            <li>
+                                Led a team of 3-4 other research assistants in development of both the data acquisition service and VueJS web application.
+                            </li>
+                            <li>
+                                Developed a simple web application using VueJS (v2) to provide a user interface for the data acquisition pipeline and prototype financial planning use cases defined by the lead researcher.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
@@ -120,9 +135,23 @@
                 <p>Below are the most recent organizaitons that I have provided professional work for:</p>
 
                 <div class="row">
-                    <div class="col-sm m-1 border rounded shadow">
+                    <div class="pt-1 col-sm m-1 border rounded shadow">
+                        <h3>R1 RCM</h3>
+                        <p><strong>Software Developer</strong> <em class="text-right">Oct 2021 - Present</em></p>
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>
+                                Contributed to the C# .NET code repository and participated in an agile/scrum team
+                            </li>
+                            <li>
+                                Provided code review feedback and helped to ensure software quality
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-1 col-sm m-1 border rounded shadow">
                         <h3>Health Catalyst</h3>
-                        <p><strong>Software Developer, Jr</strong> <em class="text-right">Jun 2018 - Present</em></p>
+                        <p><strong>Software Developer</strong> <em class="text-right">Jun 2018 - Sep 2021</em></p>
                         <p>Responsibilities:</p>
                         <ul>
                             <li>
@@ -137,7 +166,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-sm m-1 border rounded shadow">
+                    <div class="pt-1 col-sm m-1 border rounded shadow">
                         <h3>DoxTek</h3>
                         <p><strong>Technical Support Engineer</strong> <em class="text-right">Nov 2016 - May 2018</em></p>
                         <p>Responsibilities:</p>
@@ -153,20 +182,6 @@
                             </li>
                         </ul>
                     </div>
-
-                    <div class="col-sm m-1 border rounded shadow">
-                        <h3>Bluehost</h3>
-                        <p><strong>Web Advisor</strong> <em class="text-right">Mar 2016 - Oct 2016</em></p>
-                        <p>Responsibilities:</p>
-                        <ul>
-                            <li>
-                                Provided technical support for email, WordPress CMS, and other web services
-                            </li>
-                            <li>
-                                Verified server performance and operation, escalating to server administers when intervention was necessary
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </section>
         </div>
@@ -175,15 +190,20 @@
 
         <footer class="footer-dark bg-dark">
             <p class="social-icons"><span class="lead">Want to reach me? Try one of these social platforms: </span>
-                <a href="https://github.com/bvanfleet" target="_blank" class="fab fa-github-square"></a>
-                <a href="https://www.linkedin.com/in/vanfleetb/" target="_blank" class="fab fa-linkedin"></a>
+                <a href="https://github.com/bvanfleet" target="_blank" rel="noopener noreferrer" class="fab fa-github-square" aria-label="View GitHub profile" ></a>
+                <a href="https://www.linkedin.com/in/vanfleetb/" target="_blank" rel="noopener noreferrer" class="fab fa-linkedin" aria-label="View LinkedIn Profile" ></a>
             </p>
-            <p class="text-center">Copyright &copy; 2019 Brad Van Fleet</p>
+            <p class="text-center">Copyright &copy; 2019-2021 Brad Van Fleet</p>
         </footer>
 
-        <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        >
+        </script>
+        <script src="https://unpkg.com/@popperjs/core@2" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
         
         <script src="assets/js/script.js"></script>
     </body>

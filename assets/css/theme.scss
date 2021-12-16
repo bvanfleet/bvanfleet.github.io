@@ -95,7 +95,8 @@ section {
     }
 
     a:hover {
-        color: $text-color-light
+        color: $text-color-light;
+        text-decoration: none;
     }
 }
 
