@@ -1,26 +1,27 @@
 {
-  "name": "brad-vanfleet-portfolio",
-  "version": "1.0.0",
-  "description": "Professional resume and portfolio",
-  "main": "index.js",
-  "scripts": {
-    "build-styles": "sass assets/css/theme.scss assets/css/theme.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bvanfleet/bvanfleet.github.io.git"
-  },
-  "keywords": [
-    "resume",
-    "portfolio"
-  ],
+  "name": "bvanfleet-github-io",
   "author": "Brad Van Fleet",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bvanfleet/bvanfleet.github.io/issues"
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public --no-clear"
   },
-  "homepage": "https://github.com/bvanfleet/bvanfleet.github.io#readme",
   "devDependencies": {
-    "sass": "^1.45.0"
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.51.0",
+    "sirv-cli": "^2.0.0",
+    "svelte-preprocess": "^4.10.6"
   }
 }
