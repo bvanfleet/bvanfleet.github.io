@@ -1,0 +1,25 @@
+body {
+  padding-top: 2.5rem;
+}
+
+h1, h2, h3, h4, h5, strong {
+  color: #1A0140;
+}
+
+.text-right {
+  float: right;
+}
+
+.h-1 {
+  height: 150px;
+}
+
+.h-2 {
+  height: 300px;
+}
+
+.h-3 {
+  height: 450px;
+}
+
+/*# sourceMappingURL=theme.css.map */
