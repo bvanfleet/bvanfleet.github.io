@@ -1,4 +1,6 @@
 <script>
+    import jQuery from 'jquery';
+
     export let elements;
     export let period;
 

@@ -1,5 +1,6 @@
 <script>
     import Banner from "./Banner.svelte";
+    import Card from "./Card.svelte";
     import Column from "./Column.svelte";
     import Container from "./Container.svelte";
     import Flipper from "./Flipper.svelte";
@@ -132,53 +133,64 @@
             <h2>Experience</h2>
             <p>Below are the most recent organizations that I have provided professional work for:</p>
             <Row>
-                <div class="pt-1 col-sm m-1 border rounded shadow">
-                    <h3>R1 RCM</h3>
-                    <p><strong>Software Developer</strong> <em class="text-right">Oct 2021 - Present</em></p>
-                    <p>Responsibilities:</p>
-                    <ul>
-                        <li>
-                            Contributed to the C# .NET code repository and participated in an agile/scrum team
-                        </li>
-                        <li>
-                            Provided code review feedback and helped to ensure software quality
-                        </li>
-                    </ul>
-                </div>
+                <Card size="lg">
+                    <div slot="header">
+                        <h3>R1 RCM</h3>
+                        <p><strong>Software Developer</strong> <em class="text-right">Oct 2021 - Present</em></p>
+                    </div>
+                    <div slot="content">
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>
+                                Contributed to the C# .NET code repository and participated in an agile/scrum team
+                            </li>
+                            <li>
+                                Provided code review feedback and helped to ensure software quality
+                            </li>
+                        </ul>
+                    </div>
+                </Card>
+                <Card size="lg">
+                    <div slot="header">
+                        <h3>Health Catalyst</h3>
+                        <p><strong>Software Developer</strong> <em class="text-right">Jun 2018 - Sep 2021</em></p>
+                    </div>
+                    <div slot="content">
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>
+                                Program ETL piplines and Windows service in C# .NET against a SQL Server database and maintain legacy SSIS product codebase
+                            </li>
+                            <li>
+                                Participate in daily SCRUM meetings to discuss needs and progress
+                            </li>
+                            <li>
+                                Assist with desgin and review for Data Operating System platform engine features, including code testing
+                            </li>
+                        </ul>
+                    </div>
+                </Card>
 
-                <div class="pt-1 col-sm m-1 border rounded shadow">
-                    <h3>Health Catalyst</h3>
-                    <p><strong>Software Developer</strong> <em class="text-right">Jun 2018 - Sep 2021</em></p>
-                    <p>Responsibilities:</p>
-                    <ul>
-                        <li>
-                            Program ETL piplines and Windows service in C# .NET against a SQL Server database and maintain legacy SSIS product codebase
-                        </li>
-                        <li>
-                            Participate in daily SCRUM meetings to discuss needs and progress
-                        </li>
-                        <li>
-                            Assist with desgin and review for Data Operating System platform engine features, including code testing
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pt-1 col-sm m-1 border rounded shadow">
-                    <h3>DoxTek</h3>
-                    <p><strong>Technical Support Engineer</strong> <em class="text-right">Nov 2016 - May 2018</em></p>
-                    <p>Responsibilities:</p>
-                    <ul>
-                        <li>
-                            Assisted other organization's IT and support departments regarding to Kofax, OnBase, and DoxTek customizations
-                        </li>
-                        <li>
-                            Handled in-office helpdesk support for network security using Active Directory, phones, internet, and workstations &mdash; re-imaging workstations where necessary
-                        </li>
-                        <li>
-                            Planned and completed internal server upgrades and network security improvements
-                        </li>
-                    </ul>
-                </div>
+                <Card size="lg">
+                    <div slot="header">
+                        <h3>DoxTek</h3>
+                        <p><strong>Technical Support Engineer</strong> <em class="text-right">Nov 2016 - May 2018</em></p>
+                    </div>
+                    <div slot="content">
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>
+                                Assisted other organization's IT and support departments regarding to Kofax, OnBase, and DoxTek customizations
+                            </li>
+                            <li>
+                                Handled in-office helpdesk support for network security using Active Directory, phones, internet, and workstations &mdash; re-imaging workstations where necessary
+                            </li>
+                            <li>
+                                Planned and completed internal server upgrades and network security improvements
+                            </li>
+                        </ul>
+                    </div>
+                </Card>
             </Row>
         </Section>
     </Container>
